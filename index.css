@@ -82,7 +82,7 @@
     }
 }
 .main{
-    margin: auto;
+    /* margin: auto; */
     height: 650px;
     width: 716px;
     border: 3px solid rgb(4, 1, 6);
@@ -302,6 +302,9 @@
     border: 3px solid black;
     margin: 22px;
     background-color: rgb(240, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #gitti2_left{
     width:  40px;
@@ -370,4 +373,42 @@
 }
 .middlecolor1{
     background-color: aqua;
+}
+#dice{
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+}
+#image{
+    top: -20px;
+    left: 5px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+#imagered{
+    top: -20px;
+    left: 5px;
+    position: relative;
+    
+}
+#imagepurple{
+    top: -20px;
+    left: 5px;
+    position: relative;
+}
+/* .dice{
+    top: -350px;
+    position: relative;
+    left: 330px;
+    height: 45px;
+    width: 45px;
+    border: 2px solid black;
+} */
+.dice{
+    margin-right: 10px;
+}
+.mainDice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
