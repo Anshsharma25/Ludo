@@ -1,8 +1,85 @@
-.body{
-    /* margin: 0px; */
-    overflow-y: hidden;
-    overflow-x: hidden;
-    display: block;
+
+@media (max-width:768px){
+    .box{
+        background-color: burlywood !important;
+    }
+    #gitti{
+        background-color: burlywood !important;;
+    }
+    #gitti_left{
+        background-color: burlywood !important;
+    }
+    #gitti_right{
+        background-color: burlywood !important;
+    }
+    #gitti_down{
+        background-color: burlywood !important;
+    }
+    .second_box{
+        background-color: rgb(75, 10, 225) !important;
+    }
+    #gitti1{
+        background-color: rgb(75, 10, 225) !important;
+    }
+    #gitti_left2{
+        background-color: rgb(75, 10, 225) !important;
+    }
+    #gitti_right3{
+        background-color: rgb(75, 10, 225) !important;
+    }
+    #gitti_down4{
+        background-color: rgb(75, 10, 225) !important;
+    }
+    .third_col1{
+        background-color: rgb(229, 84, 22) !important;
+    }
+    #gitti-1{
+        background-color: rgb(229, 84, 22) !important;
+    }
+    #gitti2_left{
+        background-color: rgb(229, 84, 22) !important;
+    }
+    #gitti3_right{
+        background-color: rgb(229, 84, 22) !important
+    }
+    #gitti4_down{
+        background-color:rgb(229, 84, 22) !important;
+    }
+    .third_col{
+        background-color:  rgb(91, 229, 22) !important;
+    }
+    #gitti_1{
+        background-color: rgb(91, 229, 22) !important;
+    }
+    #gitti_2{
+        background-color: rgb(91, 229, 22) !important;
+    }
+    
+    #gitti_right_3{
+        background-color: rgb(91, 229, 22) !important;
+    }
+    
+    #gitti_down_4{
+        background-color: rgb(91, 229, 22) !important;
+    }
+    .flex-container_one .row1{
+        background-color: burlywood !important ;
+    }
+    .flex-container .row2{
+        background-color: rgb(75, 10, 225) !important;
+    }
+    .flex-container_one .row3{
+        background-color:  rgb(229, 84, 22) !important;
+    }
+    .flex-container .row4{
+        background-color: rgb(91, 229, 22) !important;
+    }
+    .ludohome{  
+        border-left: 98px solid burlywood !important;
+        border-bottom: 75px solid rgb(75, 10, 225) !important;
+        border-top: 97px solid rgb(91, 229, 22) !important;
+        border-right: 127px solid rgb(229, 84, 22) !important;
+    }
 }
 .main{
     margin: auto;
@@ -266,7 +343,7 @@
 .flex-container_one > div {
     background-color: #f1f1f1;
     width: 100px;
-    text-align: center;
+    text-align: center; 
     font-size: 30px;
     border:solid 2px black
 }
