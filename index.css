@@ -1,0 +1,296 @@
+.body{
+    /* margin: 0px; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: block;
+}
+.main{
+    margin: auto;
+    height: 650px;
+    width: 716px;
+    border: 3px solid rgb(4, 1, 6);
+}
+ .box{
+    height: 233px;
+    width: 250px;
+    border: 3px solid rgb(11, 9, 13);
+    background-color: aqua;
+}
+.second_box{
+    height: 233px;
+    width: 250px;
+    border: 3px solid rgb(11, 9, 13);
+    background-color: yellow;
+}
+#second{
+    height: 170px;
+    width: 250px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+    width: 103%;
+    height: 39px;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;  
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    border:solid 3px black
+}
+
+.second_col{
+    position: relative;
+    left: 250px;
+    bottom: 650px;
+    height: 233px;
+    width: 210px;
+    border: 3px solid rgb(6, 2, 9);
+    background-color: rgb(250, 24, 208);
+}
+
+#secondbox{
+    height: 170px;
+    width: 210px;
+}
+
+.third_col{
+    left:  467px;
+    position: relative;
+    bottom: 1301px;
+    height: 233px;
+    width: 248px;
+    border: 3px solid rgb(9, 3, 14);
+    background-color:  rgb(229, 22, 229);
+}
+
+.third_col1{
+    left:  467px;
+    position: relative;
+    bottom: 1301px;
+    height: 233px;
+    width: 247px;
+    border: 3px solid rgb(8, 7, 9);
+    background-color: rgb(229, 22, 22);
+}
+#thirdbox{
+    height: 170px;
+    width: 247px;
+}
+#underbox1{
+    height: 180px;
+    width: 192px;
+    border: 3px solid rgb(16, 15, 15);
+    margin: 25px;
+    background-color:white;
+} 
+#underbox2{
+    height: 180px;
+    width: 192px;
+    border: 3px solid rgb(16, 15, 15);
+    margin: 25px;
+    background-color:white;
+} 
+#underbox3{
+    height: 180px;
+    width: 192px;
+    border: 3px solid rgb(12, 8, 8);
+    margin: 25px;
+    left: 500px;
+    bottom: 500px;
+    background-color: rgb(234, 232, 232);
+}
+#underbox4{
+    height: 180px;
+    width: 192px;
+    border: 3px solid rgb(12, 8, 8);
+    margin: 25px;
+    left: 500px;
+    bottom: 500px;
+    background-color: rgb(234, 232, 232);
+}
+#gitti{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    margin: 22px;
+    background-color: aqua;
+}
+#gitti_left{
+    width:  40px;
+    height: 40px;
+    border: 3px solid black;
+    /* margin: 22px */
+    position: relative;
+    left: 24px;
+    bottom: -19px;
+    background-color: aqua;
+}
+#gitti_right{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    bottom: 113px;
+    left: 120px;
+    position: relative;
+    background-color: aqua;
+}
+#gitti_down{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    bottom: 72px;
+    left: 120px;
+    position: relative;
+    background-color: aqua;
+}
+/* player one gatti end */
+#gitti1{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    margin: 22px;
+    background-color: yellow;
+}
+#gitti_left2{
+    width:  40px;
+    height: 40px;
+    border: 3px solid black;
+    position: relative;
+    left: 24px;
+    bottom: -19px;
+    background-color: yellow;
+}
+#gitti_right3{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    bottom: 113px;
+    left: 120px;
+    position: relative;
+    background-color: yellow;
+}
+#gitti_down4{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    bottom: 72px;
+    left: 120px;
+    position: relative;
+    background-color: yellow;
+}
+/* player 2 gitti end */
+#gitti_1{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    margin: 22px;
+    background-color: rgb(229, 22, 229);
+}
+#gitti_2{
+    width:  40px;
+    height: 40px;
+    border: 3px solid black;
+    /* margin: 22px */
+    position: relative;
+    left: 24px;
+    bottom: -19px;
+    background-color: rgb(229, 22, 229) ;
+}
+#gitti_right_3{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    bottom: 113px;
+    left: 120px;
+    position: relative;
+    background-color: rgb(229, 22, 229);
+}
+#gitti_down_4{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    bottom: 72px;
+    left: 120px;
+    position: relative;
+    background-color: rgb(229, 22, 229);
+}
+/* player 3 gitti end */
+#gitti-1{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    margin: 22px;
+    background-color: rgb(240, 15, 15);
+}
+#gitti2_left{
+    width:  40px;
+    height: 40px;
+    border: 3px solid black;
+    /* margin: 22px */
+    position: relative;
+    left: 24px;
+    bottom: -19px;
+    background-color: rgb(240, 15, 15);
+}
+#gitti3_right{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    bottom: 113px;
+    left: 120px;
+    position: relative;
+    background-color: rgb(240, 15, 15);
+}
+#gitti4_down{
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    bottom: 72px;
+    left: 120px;
+    position: relative;
+    background-color:rgb(240, 15, 15);
+}
+
+.flex-container_one {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(240, 15, 15);
+    width: 101%;
+    height: 58px;
+}
+      
+.flex-container_one > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    border:solid 2px black
+}
+.flex-container_one .row1{
+    background-color: aqua  ;
+}
+.flex-container .row2{
+    background-color: yellow  ;
+}
+.flex-container_one .row3{
+    background-color: red  ;
+}
+.flex-container .row4{
+    background-color: rgb(229, 22, 229)  ;
+}
+.ludohome{  
+    height: 0;
+    width: 0;
+    float: left;
+    border-left: 98px solid aqua;
+    border-bottom: 75px solid yellow;
+    border-top: 97px solid rgb(229, 22, 229);
+    border-right: 127px solid red;
+}
+.middlecolor1{
+    background-color: aqua;
+}
