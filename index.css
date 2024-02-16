@@ -1,4 +1,3 @@
-
 @media (max-width:768px){
     .box{
         background-color: burlywood !important;
@@ -96,7 +95,7 @@
 .second_box{
     height: 233px;
     width: 250px;
-    border: 3px solid rgb(11, 9, 13);
+    border: 3px solid rgb(9, 9, 9);
     background-color: yellow;
 }
 #second{
@@ -412,3 +411,14 @@
     justify-content: center;
     align-items: center;
 }
+.my-button{
+    height: 40px;
+    width: 45px;
+    background-color: blueviolet;
+    margin-bottom: 5px;
+    border: 2px solid black;
+    
+}
+/* .my-button:hover{
+    background-color: aqua;
+} */
