@@ -1,107 +1,135 @@
-@media (max-width:768px){
-    .box{
+@media (max-width:768px) {
+    .box {
         background-color: burlywood !important;
     }
-    #gitti{
-        background-color: burlywood !important;;
+
+    #gitti {
+        background-color: burlywood !important;
+        ;
     }
-    #gitti_left{
+
+    #gitti_left {
         background-color: burlywood !important;
     }
-    #gitti_right{
+
+    #gitti_right {
         background-color: burlywood !important;
     }
-    #gitti_down{
+
+    #gitti_down {
         background-color: burlywood !important;
     }
-    .second_box{
+
+    .second_box {
         background-color: rgb(75, 10, 225) !important;
     }
-    #gitti1{
+
+    #gitti1 {
         background-color: rgb(75, 10, 225) !important;
     }
-    #gitti_left2{
+
+    #gitti_left2 {
         background-color: rgb(75, 10, 225) !important;
     }
-    #gitti_right3{
+
+    #gitti_right3 {
         background-color: rgb(75, 10, 225) !important;
     }
-    #gitti_down4{
+
+    #gitti_down4 {
         background-color: rgb(75, 10, 225) !important;
     }
-    .third_col1{
+
+    .third_col1 {
         background-color: rgb(229, 84, 22) !important;
     }
-    #gitti-1{
+
+    #gitti-1 {
         background-color: rgb(229, 84, 22) !important;
     }
-    #gitti2_left{
+
+    #gitti2_left {
         background-color: rgb(229, 84, 22) !important;
     }
-    #gitti3_right{
+
+    #gitti3_right {
         background-color: rgb(229, 84, 22) !important
     }
-    #gitti4_down{
-        background-color:rgb(229, 84, 22) !important;
+
+    #gitti4_down {
+        background-color: rgb(229, 84, 22) !important;
     }
-    .third_col{
-        background-color:  rgb(91, 229, 22) !important;
-    }
-    #gitti_1{
+
+    .third_col {
         background-color: rgb(91, 229, 22) !important;
     }
-    #gitti_2{
+
+    #gitti_1 {
         background-color: rgb(91, 229, 22) !important;
     }
-    
-    #gitti_right_3{
+
+    #gitti_2 {
         background-color: rgb(91, 229, 22) !important;
     }
-    
-    #gitti_down_4{
+
+    #gitti_right_3 {
         background-color: rgb(91, 229, 22) !important;
     }
-    .flex-container_one .row1{
-        background-color: burlywood !important ;
+
+    #gitti_down_4 {
+        background-color: rgb(91, 229, 22) !important;
     }
-    .flex-container .row2{
+
+    .flex-container_one .row1 {
+        background-color: burlywood !important;
+    }
+
+    .flex-container .row2 {
         background-color: rgb(75, 10, 225) !important;
     }
-    .flex-container_one .row3{
-        background-color:  rgb(229, 84, 22) !important;
+
+    .flex-container_one .row3 {
+        background-color: rgb(229, 84, 22) !important;
     }
-    .flex-container .row4{
+
+    .flex-container .row4 {
         background-color: rgb(91, 229, 22) !important;
     }
-    .ludohome{  
+
+    .ludohome {
         border-left: 98px solid burlywood !important;
         border-bottom: 75px solid rgb(75, 10, 225) !important;
         border-top: 97px solid rgb(91, 229, 22) !important;
         border-right: 127px solid rgb(229, 84, 22) !important;
     }
 }
-.main{
+
+.main {
     /* margin: auto; */
-    height: 650px;
-    width: 716px;
+    height: 646px;
+    width: 697px;
     border: 3px solid rgb(4, 1, 6);
 }
- .box{
+
+.box {
     height: 233px;
     width: 250px;
-    border: 3px solid rgb(11, 9, 13);
+    border: 2px solid rgb(11, 9, 13);
     background-color: aqua;
 }
-.second_box{
+
+.second_box {
     height: 233px;
     width: 250px;
-    border: 3px solid rgb(9, 9, 9);
+    border: 2px solid rgb(9, 9, 9);
     background-color: yellow;
 }
-#second{
+
+#second {
     height: 170px;
     width: 250px;
 }
+
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
@@ -109,68 +137,72 @@
     width: 103%;
     height: 39px;
 }
-  
-.flex-container > div {
-    background-color: #f1f1f1;  
+
+.flex-container>div {
+    background-color: #f1f1f1;
     width: 100px;
     text-align: center;
     font-size: 30px;
-    border:solid 3px black
+    border: solid 2px black
 }
 
-.second_col{
+.second_col {
     position: relative;
     left: 250px;
-    bottom: 650px;
+    bottom: 648px;
     height: 233px;
-    width: 210px;
+    width: 189px;
     border: 3px solid rgb(6, 2, 9);
     background-color: rgb(250, 24, 208);
 }
 
-#secondbox{
+#secondbox {
     height: 170px;
     width: 210px;
 }
 
-.third_col{
-    left:  467px;
+.third_col {
+    left: 446px;
     position: relative;
-    bottom: 1301px;
+    bottom: 1298px;
     height: 233px;
     width: 248px;
-    border: 3px solid rgb(9, 3, 14);
-    background-color:  rgb(229, 22, 229);
+    border: 2px solid rgb(9, 3, 14);
+    background-color: rgb(229, 22, 229);
 }
 
-.third_col1{
-    left:  467px;
+.third_col1 {
+    left: 446px;
     position: relative;
-    bottom: 1301px;
-    height: 233px;
+    bottom: 1296px;
+    height: 234px;
     width: 247px;
     border: 3px solid rgb(8, 7, 9);
     background-color: rgb(229, 22, 22);
 }
-#thirdbox{
+
+#thirdbox {
     height: 170px;
     width: 247px;
 }
-#underbox1{
+
+#underbox1 {
     height: 180px;
     width: 192px;
     border: 3px solid rgb(16, 15, 15);
     margin: 25px;
-    background-color:white;
-} 
-#underbox2{
+    background-color: white;
+}
+
+#underbox2 {
     height: 180px;
     width: 192px;
     border: 3px solid rgb(16, 15, 15);
     margin: 25px;
-    background-color:white;
-} 
-#underbox3{
+    background-color: white;
+}
+
+#underbox3 {
     height: 180px;
     width: 192px;
     border: 3px solid rgb(12, 8, 8);
@@ -179,7 +211,8 @@
     bottom: 500px;
     background-color: rgb(234, 232, 232);
 }
-#underbox4{
+
+#underbox4 {
     height: 180px;
     width: 192px;
     border: 3px solid rgb(12, 8, 8);
@@ -188,15 +221,17 @@
     bottom: 500px;
     background-color: rgb(234, 232, 232);
 }
-#gitti{
+
+#gitti {
     width: 40px;
     height: 40px;
     border: 3px solid black;
     margin: 22px;
     background-color: aqua;
 }
-#gitti_left{
-    width:  40px;
+
+#gitti_left {
+    width: 40px;
     height: 40px;
     border: 3px solid black;
     /* margin: 22px */
@@ -205,7 +240,8 @@
     bottom: -19px;
     background-color: aqua;
 }
-#gitti_right{
+
+#gitti_right {
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -214,7 +250,8 @@
     position: relative;
     background-color: aqua;
 }
-#gitti_down{
+
+#gitti_down {
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -223,16 +260,18 @@
     position: relative;
     background-color: aqua;
 }
+
 /* player one gatti end */
-#gitti1{
+#gitti1 {
     width: 40px;
     height: 40px;
     border: 3px solid black;
     margin: 22px;
     background-color: yellow;
 }
-#gitti_left2{
-    width:  40px;
+
+#gitti_left2 {
+    width: 40px;
     height: 40px;
     border: 3px solid black;
     position: relative;
@@ -240,7 +279,8 @@
     bottom: -19px;
     background-color: yellow;
 }
-#gitti_right3{
+
+#gitti_right3 {
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -248,8 +288,10 @@
     left: 120px;
     position: relative;
     background-color: yellow;
+    z-index: auto;
 }
-#gitti_down4{
+
+#gitti_down4 {
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -257,26 +299,31 @@
     left: 120px;
     position: relative;
     background-color: yellow;
+    z-index: index 1;
+    ;
 }
+
 /* player 2 gitti end */
-#gitti_1{
+#gitti_1 {
     width: 40px;
     height: 40px;
     border: 3px solid black;
     margin: 22px;
     background-color: rgb(229, 22, 229);
 }
-#gitti_2{
-    width:  40px;
+
+#gitti_2 {
+    width: 40px;
     height: 40px;
     border: 3px solid black;
     /* margin: 22px */
     position: relative;
     left: 24px;
     bottom: -19px;
-    background-color: rgb(229, 22, 229) ;
+    background-color: rgb(229, 22, 229);
 }
-#gitti_right_3{
+
+#gitti_right_3 {
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -285,7 +332,8 @@
     position: relative;
     background-color: rgb(229, 22, 229);
 }
-#gitti_down_4{
+
+#gitti_down_4 {
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -294,8 +342,9 @@
     position: relative;
     background-color: rgb(229, 22, 229);
 }
+
 /* player 3 gitti end */
-#gitti-1{
+#gitti-1 {
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -305,8 +354,9 @@
     align-items: center;
     justify-content: center;
 }
-#gitti2_left{
-    width:  40px;
+
+#gitti2_left {
+    width: 40px;
     height: 40px;
     border: 3px solid black;
     /* margin: 22px */
@@ -315,7 +365,8 @@
     bottom: -19px;
     background-color: rgb(240, 15, 15);
 }
-#gitti3_right{
+
+#gitti3_right {
     width: 40px;
     height: 40px;
     border: 3px solid black;
@@ -324,14 +375,15 @@
     position: relative;
     background-color: rgb(240, 15, 15);
 }
-#gitti4_down{
+
+#gitti4_down {
     width: 40px;
     height: 40px;
     border: 3px solid black;
     bottom: 72px;
     left: 120px;
     position: relative;
-    background-color:rgb(240, 15, 15);
+    background-color: rgb(240, 15, 15);
 }
 
 .flex-container_one {
@@ -341,60 +393,105 @@
     width: 101%;
     height: 58px;
 }
-      
-.flex-container_one > div {
+
+.flex-container_one>div {
     background-color: #f1f1f1;
     width: 100px;
-    text-align: center; 
+    text-align: center;
     font-size: 30px;
-    border:solid 2px black
+    border: solid 2px black
 }
-.flex-container_one .row1{
-    background-color: aqua  ;
+
+.flex-container_one .row1 {
+    background-color: aqua;
 }
-.flex-container .row2{
-    background-color: yellow  ;
+
+.flex-container .row2 {
+    background-color: yellow;
 }
-.flex-container_one .row3{
-    background-color: red  ;
+
+.flex-container_one .row3 {
+    background-color: red;
 }
-.flex-container .row4{
-    background-color: rgb(229, 22, 229)  ;
+
+.flex-container .row4 {
+    background-color: rgb(229, 22, 229);
 }
-.ludohome{  
+
+.ludohome {
     height: 0;
     width: 0;
     float: left;
     border-left: 98px solid aqua;
     border-bottom: 75px solid yellow;
     border-top: 97px solid rgb(229, 22, 229);
-    border-right: 127px solid red;
+    border-right: 98px solid red;
 }
-.middlecolor1{
+
+.middlecolor1 {
     background-color: aqua;
 }
-#dice{
+
+#dice {
     height: 50px;
     width: 50px;
     border: 3px solid black;
 }
-#image{
+
+#image {
+    top: -20px;
+    left: 5px;
+    position: relative;
+    /* border: 1px solid black; */
+
+}
+#image_dice{
+    top: 1px;
+    left: -1px;
+    position: relative;
+    /* border: 1px solid black; */
+    
+}
+#image4{
+    top: -20px;
+    left: 15px;
+    position: absolute  ;
+    /* border: 1px solid black; */
+    z-index: 1;
+}
+#image3{
     top: -20px;
     left: 5px;
     position: relative;
     /* border: 1px solid black; */
 }
-#imagered{
+#image2{
     top: -20px;
     left: 5px;
     position: relative;
-    
+    /* border: 1px solid black; */
 }
-#imagepurple{
+#image1{
+    top: -20px;
+    left: 5px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+
+#imagered {
+    top: -20px;
+    left: 5px;
+    position: relative;
+
+}
+
+#imagepurple {
     top: -20px;
     left: 5px;
     position: relative;
 }
+
 /* .dice{
     top: -350px;
     position: relative;
@@ -403,22 +500,41 @@
     width: 45px;
     border: 2px solid black;
 } */
-.dice{
+.dice {
     margin-right: 10px;
 }
+
 .mainDice {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.my-button{
-    height: 40px;
-    width: 45px;
+
+.my-button {
+    height: 20px;
+    width: 30px;
     background-color: blueviolet;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     border: 2px solid black;
-    
+
 }
+
 /* .my-button:hover{
     background-color: aqua;
 } */
+#move{
+    position: relative;
+    z-index: 10001;
+}
+#move2{
+    position: relative;
+    z-index: 10001;
+}
+#move3{
+    position: relative;
+    z-index: 10001;
+}
+#move4{
+    position: relative;
+    /* z-index: 10001; */
+}

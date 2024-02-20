@@ -1,36 +1,81 @@
-console.log("ansh sharma");
-console.log("here , I am start to finish this ");
+console.log("Ansh Sharma");
+console.log("Here, I have started to finish this ");
+const myArray = ["images/dice_1.png", "images/dice_2.png", "images/dice_6.png", "images/dice_5.png", "images/dice_4.png", "images/dice_3.png"];
+let randomElement;
 
-const myArray = ["images/dice_2.png", "images/dice_2.png", "images/dice_6.png", "images/dice_5.png", "images/dice_4.png", "images/dice_3.png"];
+const boxArray = ["second_box","box", "third_col", "third_col1"]
+const newcolor = ["yellow","aqua","rgb(229, 22, 229)",'red']
+console.log("You have an access to select the gotties", 'yellow turn')
+let currentTurn = 0
+document.getElementById(boxArray[currentTurn]).style.backgroundColor = "gray"; 
 
 document.getElementById('my-button').addEventListener('click', () => {
-    const randomElement = myArray[Math.floor(Math.random() * myArray.length)];
+     randomElement = myArray[Math.floor(Math.random() * myArray.length)];
 
     console.log(randomElement, "---randomElement----");
-    document.getElementById('image').src = randomElement
+    document.getElementById('image_dice').src = randomElement
+
+    document.getElementById(boxArray[currentTurn]).style.backgroundColor = newcolor[currentTurn];  //x add to nerw block
+    currentTurn++;
+    document.getElementById(boxArray[currentTurn]).style.backgroundColor = "gray";  // reomve from previous block
+    
+
+    
+    // +
+    // if(randomElement == "images/dice_6.png"){
+    //     yellow_player(arr)
+    // }
+    // }
+    // yellow_player(arr)
+
+
 });
-// document.getElementsByClassName("second_box").
 
-// let color = document.getElementsByClassName("second_box");
-// var changeBorder = document.getElementsByClassName("changeBorder");
-// changeBorder.addEventListener("click", ()=> {
-//     color.style.border = "3px solid green";
-// });  
-
-document.getElementById("second_box").style.backgroundColor = "gray";
 
 
 console.log("=========================================");
-document.getElementById('gitti_down4').addEventListener('click', 
-function move_gitti() {
-    // if ("gitti_down4" = true) {
-    //     return document.getElementById('g1').append(document.getElementById("move"));
-    // }
-    // else {
-    //     return 0;
-    // } 
-    console.log("----ekfmkdmss")
-    document.getElementById('move').append(document.getElementById("gitti_down4"));
-})
-console.log(move_gitti);
+document.getElementById('gitti_down4').addEventListener('click',
+    function move_gitti() {
+        console.log("----ekfmkdmss")
+        document.getElementById('move').append(document.getElementById("image4"));
+        // document.getElementById('move').append(document.getElementById("image3"));
+    })
+console.log('---------------------------')
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+    
+//     document.getElementById('gitti_down4').addEventListener('click', function() {
+//         console.log('---------------------------==============================');
+//         document.getElementById('move2').append(document.getElementById('image4'));
+//     });
+// });
+
+
+// document.getElementById('gitti_down4').addEventListener('click', function() {
+//     console.log('---------------------------==============================');
+//     document.getElementById('move3').append(document.getElementById('image4'));
+// });
+
+// document.getElementById('image4').addEventListener('click', function() {
+//     console.log('---------------------------==============================');
+//     document.getElementById('move4').append(document.getElementById('image4'));
+// });
