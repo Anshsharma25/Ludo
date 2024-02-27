@@ -80,7 +80,7 @@
         background-color: rgb(91, 229, 22) !important;
     }
 
-    .flex-container_one .row1 {
+    .flex-container_one #row1 {
         background-color: burlywood !important;
     }
 
@@ -402,7 +402,7 @@
     border: solid 2px black
 }
 
-.flex-container_one .row1 {
+.flex-container_one #row1 {
     background-color: aqua;
 }
 
@@ -486,6 +486,13 @@
 
 }
 
+
+#imageblue {
+    top: -20px;
+    left: 5px;
+    position: relative;
+
+}
 #imagepurple {
     top: -20px;
     left: 5px;
@@ -537,4 +544,50 @@
 #move4{
     position: relative;
     /* z-index: 10001; */
+}
+#first_blueimage{
+    position: absolute;
+    z-index: -1;
+    left: 4px;
+    top: 6px;
+    /* transform: rotate(90deg); */
+    z-index: 1;
+}
+#blueimage{
+    position: relative;
+    z-index: 1;   
+}
+#first_purpleimage{
+    position: absolute;
+    z-index: -1;
+    left: 14px;
+    top: 0px;
+    
+    /* transform: rotate(180deg); */
+    z-index: 1;
+}
+#purpleimage{
+    position: relative;
+    z-index: 1;   
+}
+#first_redimage{
+    position: absolute;
+    z-index: -1;
+    left: -10px;
+    top: -20px;
+    /* transform: rotate(180deg); */
+    z-index: 1;
+}
+#redimage{
+    position: relative;
+    z-index: 1;   
+}
+
+.Token_moving2{
+    position: absolute;
+}
+#Token_moving2  imageblue {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
