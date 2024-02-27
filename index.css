@@ -1,3 +1,6 @@
+*{
+    background-color: gray;
+}
 @media (max-width:768px) {
     .box {
         background-color: burlywood !important;
@@ -406,15 +409,15 @@
     background-color: aqua;
 }
 
-.flex-container .row2 {
+.flex-container #row2 {
     background-color: yellow;
 }
 
-.flex-container_one .row3 {
+.flex-container_one #row3 {
     background-color: red;
 }
 
-.flex-container .row4 {
+.flex-container #srow4 {
     background-color: rgb(229, 22, 229);
 }
 
