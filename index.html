@@ -11,232 +11,260 @@
     </title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <h1>ludo</h1>
     <div class="mainDice">
         <div class="dice">
             <div>
                 <button id="my-button">
-                    <img id="image_dice" src="images/dice_1.png" style="mix-blend-mode: darken;" width="65px" height="65px">
+                    <img id="image_dice" src="images/dice_1.png" style="mix-blend-mode: darken;" width="65px"
+                        height="65px">
                 </button>
             </div>
         </div>
         <div class="main">
-            <div class="box"  id="box">
-                <div id="underbox1">
-                    <div id="gitti">
-                        <div id="imageblue"> <img  id="first_blueimage"   src="images/blue.png" style="mix-blend-mode: darken;" width="30px"
-                                height="40px"></div>
-                    </div>
-                    <div id="gitti_left">
-                        <div id="imageblue"> <img src="images/blue.png" style="mix-blend-mode: darken;" width="30px"
-                                height="40px"></div>
-                    </div>
-                    <div id="gitti_right">
-                        <div id="imageblue"> <img src="images/blue.png" style="mix-blend-mode: darken;" width="30px"
-                                height="40px"></div>
-                    </div>
-                    <div id="gitti_down">
-                        <div id="imageblue"> <img src="images/blue.png" style="mix-blend-mode: darken;" width="30px"
-                                height="40px"></div>
+            <div style="display: flex; flex-direction: column;">
+
+                <div class="box" id="box">
+                    <div id="underbox1">
+                        <div id="gitti">
+                            <div id="imageblue"> <img id="first_blueimage" src="images/blue.png"
+                                    style="mix-blend-mode: darken;" width="30px" height="40px"></div>
+                        </div>
+                        <div id="gitti_left">
+                            <div id="imageblue"> <img src="images/blue.png" style="mix-blend-mode: darken;" width="30px"
+                                    height="40px"></div>
+                        </div>
+                        <div id="gitti_right">
+                            <div id="imageblue"> <img src="images/blue.png" style="mix-blend-mode: darken;" width="30px"
+                                    height="40px"></div>
+                        </div>
+                        <div id="gitti_down">
+                            <div id="imageblue"> <img src="images/blue.png" style="mix-blend-mode: darken;" width="30px"
+                                    height="40px"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box" id="second">
-                <div class="flex-container_one">
-                    <div class="Token_moving1"> </div>
-                    <div class="Token_moving2"  id="blueimage" style="background-color: aqua;"><img src="/images/star.png" alt="star" width="39px" height="45px"></div> 
-                    <!-- we can change the id and convert into the class  -->
-                    <div  class="Token_moving3" ></div>
-                    <div  class="Token_moving4" ></div>
-                    <div  class="Token_moving5" ></div>
-                    <div  class="Token_moving6" ></div>
-                </div>
-                <div class="flex-container_one">
-                    <div class="Token_moving52"></div>
-                    <div class="Token_moving53" id="row1"></div>
-                    <div class="Token_moving54" id="row1"></div>
-                    <div class="Token_moving55" id="row1"></div>
-                    <div class="Token_moving56" id="row1"></div>
-                    <div class="Token_moving57" id="row1"></div>
-                    <!-- we can change the class  and convert into the id  -->
-                </div>
-                <div class="flex-container_one">
-                    <div class="Token_moving51"></div>
-                    <div class="Token_moving50"></div>
-                    <div class="Token_moving49"><img src="/images/star.png" alt="star" width="39px" height="45px"></div>
-                    <div class="Token_moving48"></div>
-                    <div class="Token_moving47"></div>
-                    <div class="Token_moving46"></div>
-                    <!-- we can change the id and convert into the class  -->
+                <div id="second">
+                    <div class="flex-container_one">
+                        <div class="cell Token_moving1"> </div>
+                        <div class="cell Token_moving2" id="blueimage" style="background-color: aqua;"><img
+                                src="/images/star.png" alt="star" width="39px" height="45px"></div>
+                        <!-- we can change the id and convert into the class  -->
+                        <div class="cell Token_moving3"></div>
+                        <div class="cell Token_moving4"></div>
+                        <div class="cell Token_moving5"></div>
+                        <div class="cell Token_moving6"></div>
+                    </div>
+                    <div class="flex-container_one">
+                        <div class="cell Token_moving52"></div>
+                        <div class="cell blue1" id="row1"></div>
+                        <div class="cell blue2" id="row1"></div>
+                        <div class="cell blue3" id="row1"></div>
+                        <div class="cell blue4" id="row1"></div>
+                        <div class="cell blue5" id="row1"></div>
+                        <!-- we can change the class  and convert into the id  -->
+                    </div>
+                    <div class="flex-container_one">
+                        <div class="cell Token_moving51"></div>
+                        <div class="cell Token_moving50"></div>
+                        <div class="cell Token_moving49"><img src="/images/star.png" alt="star" width="39px"
+                                height="45px">
+                        </div>
+                        <div class="cell Token_moving48"></div>
+                        <div class="cell Token_moving47"></div>
+                        <div class="cell Token_moving46"></div>
+                        <!-- we can change the id and convert into the class  -->
+                    </div>
                 </div>
 
-            </div>
-            <div class="second_box" id="second_box">
-                <div id="underbox2">
-                    <div id="gitti1">
-                        <div id="image1"><img id="g1" src="images/yellow.png" width="30px" height="40px"></div>
+                <div class="second_box" id="second_box">
+                    <div id="underbox2">
+                        <div id="gitti1">
+                            <div id="image1"><img id="g1" src="images/yellow.png" width="30px" height="40px"></div>
+                        </div>
+                        <div id="gitti_left2">
+                            <div id="image2"><img src="images/yellow.png" width="30px" height="40px"> </div>
+                        </div>
+                        <div id="gitti_right3">
+                            <div id="image3"><img src="images/yellow.png" width="30px" height="40px"></div>
+                        </div>
+                        <div id="gitti_down4">
+                            <div id="image4"><img id="fourthyellowimg" src="images/yellow.png" width="30px"
+                                    height="40px">
+                            </div>
+                        </div>
                     </div>
-                    <div id="gitti_left2">
-                        <div id="image2"><img src="images/yellow.png" width="30px" height="40px"> </div>
-                    </div>
-                    <div id="gitti_right3">
-                        <div id="image3"><img src="images/yellow.png" width="30px" height="40px"></div>
-                    </div>
-                    <div id="gitti_down4">
-                        <div id="image4"><img  id="fourthyellowimg"  src="images/yellow.png" width="30px" height="40px" > </div>
-                    </div>
                 </div>
+                <!-- </div> -->
             </div>
-            <div class="second_col">
-                <div class="flex-container">
-                    <div class="Token_moving12" ></div>
-                    <div class="Token_moving13" ></div>
-                    <div class="Token_moving14" ></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div class="Token_moving11" ></div>
-                    <div class="Token_moving68" id="row4"></div>
-                    <div class="Token_moving15"    id="purpleimage"  style="background-color: purple;"><img src="/images/star.png" alt="star" width="39px" height="36px"></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div class="Token_moving10" ><img src="/images/star.png" alt="star" width="39px" height="36px"></div>
-                    <div class="Token_moving69" id="row4"></div>
-                    <div class="Token_moving16" ></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div class="Token_moving9" ></div>
-                    <div class="Token_moving70" id="row4"></div>
-                    <div class="Token_moving17" ></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div class="Token_moving8" ></div>
-                    <div class="Token_moving71" id="row4"></div>
-                    <div class="Token_moving18"></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div class="Token_moving7" ></div>
-                    <div class="Token_moving72"  id="row4"></div>
-                    <div class="Token_moving19" ></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-            </div>
-            <div class="second_col" id="secondbox">
-                <div class="ludohome"></div>
-            </div>
-            <div class="second_col">
-                <div class="flex-container">
-                    <div  class="Token_moving45"></div>
-                    <div  class="Token_moving67"  id="row2"></div>
-                    <div class="Token_moving33"></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div  class="Token_moving44"  id="move4"></div>
-                    <div  class="Token_moving66"   id="row2"></div>
-                    <div class="Token_moving34"></div>
-                    <!-- we can change the id and convert into the class  -->
+            <div style="display: flex; flex-direction: column;">
 
-                </div>
-                <div class="flex-container">
-                    <div  class="Token_moving43" id="move3" ></div>
-                    <div  class="Token_moving65" id="row2"></div>
-                    <div class="Token_moving35"></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div  class="Token_moving42" id="move2">  </div>
-                    <div  class="Token_moving64" id="row2"></div>
-                    <div class="Token_moving36"><img src="/images/star.png" alt="star" width="39px" height="36px"></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div  class="Token_moving41" id="move"  style="background-color: yellow;"><img src="/images/star.png" alt="star" width="39px" height="36px"></div>
-                    <div  class="Token_moving63"   id="row2"></div>
-                    <div class="Token_moving37"></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-                <div class="flex-container">
-                    <div class="Token_moving40"></div>
-                    <div class="Token_moving39"></div>
-                    <div class="Token_moving38"></div>
-                    <!-- we can change the id and convert into the class  -->
-                </div>
-            </div>
-            <div class="third_col" id="third_col">
-                <div id="underbox3">
-                    <div id="gitti_1">
-                        <div id="imagepurple"> <img id="first_purpleimage"  src="images/purple.jpeg" style="mix-blend-mode: darken;"
-                                width="35px" height="45px"></div>
+                <div class="second_col">
+                    <div class="flex-container">
+                        <div class="cell Token_moving12"></div>
+                        <div class="cell Token_moving13"></div>
+                        <div class="cell Token_moving14"></div>
+                        <!-- we can change the id and convert into the class  -->
                     </div>
-                    <div id="gitti_2">
-                        <div id="imagepurple"> <img src="images/purple.jpeg" style="mix-blend-mode: darken;"
-                                width="35px" height="45px"></div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving11"></div>
+                        <div class="cell purple5" id="row4"></div>
+                        <div class="cell Token_moving15" id="purpleimage" style="background-color: purple;"><img
+                                src="/images/star.png" alt="star" width="39px" height="36px"></div>
+                        <!-- we can change the id and convert into the class  -->
                     </div>
-                    <div id="gitti_right_3">
-                        <div id="imagepurple"> <img src="images/purple.jpeg" style="mix-blend-mode: darken;"
-                                width="35px" height="45px"></div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving10"><img src="/images/star.png" alt="star" width="39px"
+                                height="36px">
+                        </div>
+                        <div class="cell purple4" id="row4"></div>
+                        <div class="cell Token_moving16"></div>
+                        <!-- we can change the id and convert into the class  -->
                     </div>
-                    <div id="gitti_down_4">
-                        <div id="imagepurple"> <img src="images/purple.jpeg" style="mix-blend-mode: darken;"
-                                width="35px" height="45px"></div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving9"></div>
+                        <div class="cell purple3" id="row4"></div>
+                        <div class="cell Token_moving17"></div>
+                        <!-- we can change the id and convert into the class  -->
+                    </div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving8"></div>
+                        <div class="cell purple2" id="row4"></div>
+                        <div class="cell Token_moving18"></div>
+                        <!-- we can change the id and convert into the class  -->
+                    </div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving7"></div>
+                        <div class="cell purple1" id="row4"></div>
+                        <div class="cell Token_moving19"></div>
+                        <!-- we can change the id and convert into the class  -->
                     </div>
                 </div>
-            </div>
-            <div class="third_col" id="thirdbox">
-                <div class="flex-container_one">
-                    <div class="Token_moving20" ></div>
-                    <div class="Token_moving21" ></div>
-                    <div class="Token_moving22" ></div>
-                    <div class="Token_moving23" > <img src="/images/star.png" alt="star" width="39px" height="45px"> </div>
-                    <div class="Token_moving24" ></div>
-                    <div class="Token_moving25" ></div>
-                    <!--   we can change the id and convert into the class  -->
+                <div>
+                    <div class="ludohome"></div>
                 </div>
-                <div class="flex-container_one">
-                    <div class="Token_moving62" id="row3"></div>
-                    <div class="Token_moving61" id="row3"></div>
-                    <div class="Token_moving60" id="row3"></div>
-                    <div class="Token_moving59" id="row3"></div>
-                    <div class="Token_moving58" id="row3"></div>
-                    <div class="Token_moving26" ></div>
-                    <!-- we can change the  class and convert into the  id  -->
+                <div class="second_col">
+                    <div class="flex-container">
+                        <div class="cell Token_moving45"></div>
+                        <div class="cell Token_movingyellow_5" id="row2"></div>
+                        <div class="cell Token_moving33"></div>
+                        <!-- we can change the id and convert into the class  -->
+                    </div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving44" id="move4"></div>
+                        <div class="cell Token_movingyellow_4" id="row2"></div>
+                        <div class="cell Token_moving34"></div>
+                        <!-- we can change the id and convert into the class  -->
 
-                </div>
-                <div class="flex-container_one">
-                    <div class="Token_moving32" ></div>
-                    <div class="Token_moving31" ></div>
-                    <div class="Token_moving30" ></div>
-                    <div class="Token_moving29" ></div>
-                    <div class="Token_moving28"   id="redimage" style="background-color: red;"><img src="/images/star.png" alt="star" width="39px" height="45px"></div>
-                    <div class="Token_moving27" ></div>
-                   <!-- we can change the  class and convert into the  id  -->
+                    </div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving43" id="move3"></div>
+                        <div class="cell Token_movingyellow_3" id="row2"></div>
+                        <div class="cell Token_moving35"></div>
+                        <!-- we can change the id and convert into the class  -->
+                    </div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving42" id="move2"> </div>
+                        <div class="cell Token_movingyellow_2" id="row2"></div>
+                        <div class="cell Token_moving36"><img src="/images/star.png" alt="star" width="39px"
+                                height="36px">
+                        </div>
+                        <!-- we can change the id and convert into the class  -->
+                    </div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving41" id="move" style="background-color: yellow;"><img
+                                src="/images/star.png" alt="star" width="39px" height="36px"></div>
+                        <div class="cell Token_movingyellow_1" id="row2"></div>
+                        <div class="cell Token_moving37"></div>
+                        <!-- we can change the id and convert into the class  -->
+                    </div>
+                    <div class="flex-container">
+                        <div class="cell Token_moving40"></div>
+                        <div class="cell Token_moving39"></div>
+                        <div class="cell Token_moving38"></div>
+                        <!-- we can change the id and convert into the class  -->
+                    </div>
                 </div>
             </div>
-            <div class="third_col1" id="third_col1">
-                <div id="underbox4">
-                    <div id="gitti-1">
-                        <div id="imagered"> <img id="first_redimage"  src="images/red gitt.png" style="mix-blend-mode: darken;" width="35px"
-                                height="45px"></div>
+            <div style="display: flex; flex-direction: column;">
+                
+                <div class="third_col" id="third_col">
+                    <div id="underbox3">
+                        <div id="gitti_1">
+                            <div id="imagepurple"> <img id="first_purpleimage" src="images/purple.jpeg"
+                                    style="mix-blend-mode: darken;" width="35px" height="45px"></div>
+                        </div>
+                        <div id="gitti_2">
+                            <div id="imagepurple"> <img src="images/purple.jpeg" style="mix-blend-mode: darken;"
+                                    width="35px" height="45px"></div>
+                        </div>
+                        <div id="gitti_right_3">
+                            <div id="imagepurple"> <img src="images/purple.jpeg" style="mix-blend-mode: darken;"
+                                    width="35px" height="45px"></div>
+                        </div>
+                        <div id="gitti_down_4">
+                            <div id="imagepurple"> <img src="images/purple.jpeg" style="mix-blend-mode: darken;"
+                                    width="35px" height="45px"></div>
+                        </div>
                     </div>
-                    <div id="gitti2_left">
-                        <div id="imagered"><img src="images/red gitt.png" style="mix-blend-mode: darken;" width="35px"
-                                height="45px"></div>
-                    </div>
-                    <div id="gitti3_right">
-                        <div id="imagered"><img  id="second_redimage" src="images/red gitt.png" style="mix-blend-mode: darken;" width="35px"
-                                height="45px"></div>
-                    </div>
-                    <div id="gitti4_down">
-                        <div id="imagered"><img src="images/red gitt.png" style="mix-blend-mode: darken;" width="35px"
-                                height="45px"></div>
-                    </div>
+                </div>
 
+                <div>
+                    <div class="flex-container_one">
+                        <div class="cell Token_moving20"></div>
+                        <div class="cell Token_moving21"></div>
+                        <div class="cell Token_moving22"></div>
+                        <div class="cell Token_moving23"> <img src="/images/star.png" alt="star" width="39px"
+                                height="45px">
+                        </div>
+                        <div class="cell Token_moving24"></div>
+                        <div class="cell Token_moving25"></div>
+                        <!--   we can change the id and convert into the class  -->
+                    </div>
+                    <div class="flex-container_one">
+                        <div class="cell red1" id="row3"></div>
+                        <div class="cell red2" id="row3"></div>
+                        <div class="cell red3" id="row3"></div>
+                        <div class="cell red4" id="row3"></div>
+                        <div class="cell red5" id="row3"></div>
+                        <div class="cell Token_moving26"></div>
+                        <!-- we can change the  class and convert into the  id  -->
+
+                    </div>
+                    <div class="flex-container_one">
+                        <div class="cell Token_moving32"></div>
+                        <div class="cell Token_moving31"></div>
+                        <div class="cell Token_moving30"></div>
+                        <div class="cell Token_moving29"></div>
+                        <div class="cell Token_moving28" id="redimage" style="background-color: red;"><img
+                                src="/images/star.png" alt="star" width="39px" height="45px"></div>
+                        <div class="cell Token_moving27"></div>
+                        <!-- we can change the  class and convert into the  id  -->
+                    </div>
+                </div>
+                
+                <div class="third_col1" id="third_col1">
+                    <div id="underbox4">
+                        <div id="gitti-1">
+                            <div id="imagered"> <img id="first_redimage" src="images/red gitt.png"
+                                    style="mix-blend-mode: darken;" width="35px" height="45px"></div>
+                        </div>
+                        <div id="gitti2_left">
+                            <div id="imagered"><img src="images/red gitt.png" style="mix-blend-mode: darken;"
+                                    width="35px" height="45px"></div>
+                        </div>
+                        <div id="gitti3_right">
+                            <div id="imagered"><img id="second_redimage" src="images/red gitt.png"
+                                    style="mix-blend-mode: darken;" width="35px" height="45px"></div>
+                        </div>
+                        <div id="gitti4_down">
+                            <div id="imagered"><img src="images/red gitt.png" style="mix-blend-mode: darken;"
+                                    width="35px" height="45px"></div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

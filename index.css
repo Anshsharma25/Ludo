@@ -1,14 +1,16 @@
 *{
-    background-color: gray;
+    /* background-color: gray; */
+    box-sizing: border-box;
 }
 @media (max-width:768px) {
     .box {
+        
         background-color: burlywood !important;
     }
 
     #gitti {
         background-color: burlywood !important;
-        ;
+        
     }
 
     #gitti_left {
@@ -95,7 +97,7 @@
         background-color: rgb(229, 84, 22) !important;
     }
 
-    .flex-container .row4 {
+    .flex-container #row4 {
         background-color: rgb(91, 229, 22) !important;
     }
 
@@ -109,36 +111,31 @@
 
 .main {
     /* margin: auto; */
-    height: 646px;
-    width: 697px;
-    border: 3px solid rgb(4, 1, 6);
+    display: flex;
+    height: 600px;
+    width: 600px;
+    border: 1px solid rgb(4, 1, 6);
 }
 
 .box {
-    height: 233px;
-    width: 250px;
-    border: 2px solid rgb(11, 9, 13);
+    height: 240px;
+    width: 240px;
+    border: 1px solid rgb(11, 9, 13);
     background-color: aqua;
 }
 
 .second_box {
-    height: 233px;
-    width: 250px;
-    border: 2px solid rgb(9, 9, 9);
+    height: 240px;
+    width: 240px;
+    border: 1px solid rgb(9, 9, 9);
     background-color: yellow;
-}
-
-#second {
-    height: 170px;
-    width: 250px;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    background-color: DodgerBlue;
-    width: 103%;
-    height: 39px;
+    width: fit-content;
+    /* background-color: DodgerBlue; */
 }
 
 .flex-container>div {
@@ -146,16 +143,13 @@
     width: 100px;
     text-align: center;
     font-size: 30px;
-    border: solid 2px black
+    border: 1px solid black
 }
 
 .second_col {
-    position: relative;
-    left: 250px;
-    bottom: 648px;
-    height: 233px;
-    width: 189px;
-    border: 3px solid rgb(6, 2, 9);
+    width: fit-content;
+    /* position: relative; */
+    /* border: 1px solid rgb(6, 2, 9); */
     background-color: rgb(250, 24, 208);
 }
 
@@ -165,22 +159,22 @@
 }
 
 .third_col {
-    left: 446px;
+    /* left: 446px; */
     position: relative;
-    bottom: 1298px;
-    height: 233px;
-    width: 248px;
-    border: 2px solid rgb(9, 3, 14);
+    /* bottom: 1298px; */
+    height: 240px;
+    width: 240px;
+    border: 1px solid rgb(9, 3, 14);
     background-color: rgb(229, 22, 229);
 }
 
 .third_col1 {
-    left: 446px;
+    /* left: 446px; */
     position: relative;
-    bottom: 1296px;
-    height: 234px;
-    width: 247px;
-    border: 3px solid rgb(8, 7, 9);
+    /* bottom: 1296px; */
+    height: 240px;
+    width: 240px;
+    border: 1px solid rgb(8, 7, 9);
     background-color: rgb(229, 22, 22);
 }
 
@@ -192,7 +186,7 @@
 #underbox1 {
     height: 180px;
     width: 192px;
-    border: 3px solid rgb(16, 15, 15);
+    border: 1px solid rgb(16, 15, 15);
     margin: 25px;
     background-color: white;
 }
@@ -200,7 +194,7 @@
 #underbox2 {
     height: 180px;
     width: 192px;
-    border: 3px solid rgb(16, 15, 15);
+    border: 1px solid rgb(16, 15, 15);
     margin: 25px;
     background-color: white;
 }
@@ -208,7 +202,7 @@
 #underbox3 {
     height: 180px;
     width: 192px;
-    border: 3px solid rgb(12, 8, 8);
+    border: 1px solid rgb(12, 8, 8);
     margin: 25px;
     left: 500px;
     bottom: 500px;
@@ -218,7 +212,7 @@
 #underbox4 {
     height: 180px;
     width: 192px;
-    border: 3px solid rgb(12, 8, 8);
+    border: 1px solid rgb(12, 8, 8);
     margin: 25px;
     left: 500px;
     bottom: 500px;
@@ -228,7 +222,7 @@
 #gitti {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     margin: 22px;
     background-color: aqua;
 }
@@ -236,7 +230,7 @@
 #gitti_left {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     /* margin: 22px */
     position: relative;
     left: 24px;
@@ -247,7 +241,7 @@
 #gitti_right {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     bottom: 113px;
     left: 120px;
     position: relative;
@@ -257,7 +251,7 @@
 #gitti_down {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     bottom: 72px;
     left: 120px;
     position: relative;
@@ -268,7 +262,7 @@
 #gitti1 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     margin: 22px;
     background-color: yellow;
 }
@@ -276,7 +270,7 @@
 #gitti_left2 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     position: relative;
     left: 24px;
     bottom: -19px;
@@ -286,7 +280,7 @@
 #gitti_right3 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     bottom: 113px;
     left: 120px;
     position: relative;
@@ -297,7 +291,7 @@
 #gitti_down4 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     bottom: 72px;
     left: 120px;
     position: relative;
@@ -310,7 +304,7 @@
 #gitti_1 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     margin: 22px;
     background-color: rgb(229, 22, 229);
 }
@@ -318,7 +312,7 @@
 #gitti_2 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     /* margin: 22px */
     position: relative;
     left: 24px;
@@ -329,7 +323,7 @@
 #gitti_right_3 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     bottom: 113px;
     left: 120px;
     position: relative;
@@ -339,7 +333,7 @@
 #gitti_down_4 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     bottom: 72px;
     left: 120px;
     position: relative;
@@ -350,7 +344,7 @@
 #gitti-1 {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     margin: 22px;
     background-color: rgb(240, 15, 15);
     display: flex;
@@ -361,7 +355,7 @@
 #gitti2_left {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     /* margin: 22px */
     position: relative;
     left: 24px;
@@ -372,7 +366,7 @@
 #gitti3_right {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     bottom: 113px;
     left: 120px;
     position: relative;
@@ -382,7 +376,7 @@
 #gitti4_down {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: 1px solid black;
     bottom: 72px;
     left: 120px;
     position: relative;
@@ -392,9 +386,10 @@
 .flex-container_one {
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgb(240, 15, 15);
-    width: 101%;
-    height: 58px;
+    width: fit-content;
+    /* background-color: rgb(240, 15, 15); */
+    /* width: 101%;
+    height: 58px; */
 }
 
 .flex-container_one>div {
@@ -402,7 +397,7 @@
     width: 100px;
     text-align: center;
     font-size: 30px;
-    border: solid 2px black
+    border: 1px solid black
 }
 
 .flex-container_one #row1 {
@@ -417,18 +412,29 @@
     background-color: red;
 }
 
-.flex-container #srow4 {
+.flex-container #row4 {
     background-color: rgb(229, 22, 229);
+}
+.cell{
+    position: relative;
+    height: 40px !important;
+    width: 40px !important;
+}
+.flex-container div img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .ludohome {
     height: 0;
     width: 0;
     float: left;
-    border-left: 98px solid aqua;
-    border-bottom: 75px solid yellow;
-    border-top: 97px solid rgb(229, 22, 229);
-    border-right: 98px solid red;
+    border-left: 60px solid aqua;
+    border-bottom: 60px solid yellow;
+    border-top: 60px solid rgb(229, 22, 229);
+    border-right: 60px solid red;
 }
 
 .middlecolor1 {
@@ -438,7 +444,7 @@
 #dice {
     height: 50px;
     width: 50px;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 #image {
@@ -508,7 +514,7 @@
     left: 330px;
     height: 45px;
     width: 45px;
-    border: 2px solid black;
+    border: 1px solid black;
 } */
 .dice {
     margin-right: 10px;
@@ -525,7 +531,7 @@
     width: 30px;
     background-color: blueviolet;
     margin-bottom: 2px;
-    border: 2px solid black;
+    border: 1px solid black;
 
 }
 
