@@ -89,11 +89,11 @@
         background-color: burlywood !important;
     }
 
-    .flex-container .row2 {
+    .flex-container #row2 {
         background-color: rgb(75, 10, 225) !important;
     }
 
-    .flex-container_one .row3 {
+    .flex-container_one #row3 {
         background-color: rgb(229, 84, 22) !important;
     }
 
@@ -102,10 +102,10 @@
     }
 
     .ludohome {
-        border-left: 98px solid burlywood !important;
-        border-bottom: 75px solid rgb(75, 10, 225) !important;
-        border-top: 97px solid rgb(91, 229, 22) !important;
-        border-right: 127px solid rgb(229, 84, 22) !important;
+        border-left: 60px solid burlywood !important;
+        border-bottom: 59px solid rgb(75, 10, 225) !important;
+        border-top: 60px solid rgb(91, 229, 22) !important;
+        border-right: 60px solid rgb(229, 84, 22) !important;
     }
 }
 
@@ -189,6 +189,9 @@
     border: 1px solid rgb(16, 15, 15);
     margin: 25px;
     background-color: white;
+    margin-top: 30px;
+    border-radius: 25%;
+    
 }
 
 #underbox2 {
@@ -197,6 +200,8 @@
     border: 1px solid rgb(16, 15, 15);
     margin: 25px;
     background-color: white;
+    margin-top: 30px;
+    border-radius: 25%;
 }
 
 #underbox3 {
@@ -207,6 +212,8 @@
     left: 500px;
     bottom: 500px;
     background-color: rgb(234, 232, 232);
+    margin-top: 30px;
+    border-radius: 25%;
 }
 
 #underbox4 {
@@ -217,6 +224,8 @@
     left: 500px;
     bottom: 500px;
     background-color: rgb(234, 232, 232);
+    margin-top: 30px;
+    border-radius: 25%;
 }
 
 #gitti {
@@ -225,6 +234,9 @@
     border: 1px solid black;
     margin: 22px;
     background-color: aqua;
+    margin-left: 29px;
+    margin-top: 26px;
+    border-radius: 30%;
 }
 
 #gitti_left {
@@ -233,29 +245,33 @@
     border: 1px solid black;
     /* margin: 22px */
     position: relative;
-    left: 24px;
+    left: 29px;
     bottom: -19px;
     background-color: aqua;
+    border-radius: 30%;
 }
 
 #gitti_right {
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    bottom: 113px;
+    bottom: 101px;
     left: 120px;
     position: relative;
     background-color: aqua;
+    border-radius: 30%;
 }
 
 #gitti_down {
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    bottom: 72px;
+    bottom: 61px;
     left: 120px;
     position: relative;
     background-color: aqua;
+     /* border-radius: 2%; */
+    border-radius: 30%; 
 }
 
 /* player one gatti end */
@@ -265,6 +281,9 @@
     border: 1px solid black;
     margin: 22px;
     background-color: yellow;
+    margin-left: 29px;
+    margin-top: 26px;
+    border-radius: 30%;
 }
 
 #gitti_left2 {
@@ -272,32 +291,34 @@
     height: 40px;
     border: 1px solid black;
     position: relative;
-    left: 24px;
+    left: 29px;
     bottom: -19px;
     background-color: yellow;
+    border-radius: 30%;
 }
 
 #gitti_right3 {
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    bottom: 113px;
+    bottom: 101px;
     left: 120px;
     position: relative;
     background-color: yellow;
     z-index: auto;
+    border-radius: 30%;
 }
 
 #gitti_down4 {
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    bottom: 72px;
+    bottom: 61px;
     left: 120px;
     position: relative;
     background-color: yellow;
     z-index: index 1;
-    ;
+    border-radius: 30%;
 }
 
 /* player 2 gitti end */
@@ -307,6 +328,9 @@
     border: 1px solid black;
     margin: 22px;
     background-color: rgb(229, 22, 229);
+    margin-left: 29px;
+    margin-top: 26px;
+    border-radius: 30%;
 }
 
 #gitti_2 {
@@ -315,29 +339,32 @@
     border: 1px solid black;
     /* margin: 22px */
     position: relative;
-    left: 24px;
+    left: 29px;
     bottom: -19px;
     background-color: rgb(229, 22, 229);
+    border-radius: 30%;
 }
 
 #gitti_right_3 {
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    bottom: 113px;
+    bottom: 101px;
     left: 120px;
     position: relative;
     background-color: rgb(229, 22, 229);
+    border-radius: 30%;
 }
 
 #gitti_down_4 {
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    bottom: 72px;
+    bottom: 61px;
     left: 120px;
     position: relative;
     background-color: rgb(229, 22, 229);
+    border-radius: 30%;
 }
 
 /* player 3 gitti end */
@@ -350,6 +377,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 29px;
+    margin-top: 26px;
+    border-radius: 30%;
 }
 
 #gitti2_left {
@@ -358,29 +388,32 @@
     border: 1px solid black;
     /* margin: 22px */
     position: relative;
-    left: 24px;
+    left: 29px;
     bottom: -19px;
     background-color: rgb(240, 15, 15);
+    border-radius: 30%;
 }
 
 #gitti3_right {
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    bottom: 113px;
+    bottom: 101px;
     left: 120px;
     position: relative;
     background-color: rgb(240, 15, 15);
+    border-radius: 30%;
 }
 
 #gitti4_down {
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    bottom: 72px;
+    bottom: 61px;
     left: 120px;
     position: relative;
     background-color: rgb(240, 15, 15);
+    border-radius: 30%;
 }
 
 .flex-container_one {
@@ -425,14 +458,23 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+    right: 1px;
 }
+.flex-container_one div img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    right: 1px;
+}
+
 
 .ludohome {
     height: 0;
     width: 0;
     float: left;
     border-left: 60px solid aqua;
-    border-bottom: 60px solid yellow;
+    border-bottom: 59px solid yellow;
     border-top: 60px solid rgb(229, 22, 229);
     border-right: 60px solid red;
 }
@@ -463,26 +505,26 @@
 }
 #image4{
     top: -20px;
-    left: 15px;
+    left: 7px;
     position: absolute  ;
     /* border: 1px solid black; */
     z-index: 1;
 }
 #image3{
     top: -20px;
-    left: 5px;
+    left: 7px;
     position: relative;
     /* border: 1px solid black; */
 }
 #image2{
     top: -20px;
-    left: 5px;
+    left: 7px;
     position: relative;
     /* border: 1px solid black; */
 }
 #image1{
     top: -20px;
-    left: 5px;
+    left: 7px;
     position: relative;
     /* border: 1px solid black; */
 }
@@ -557,7 +599,7 @@
 #first_blueimage{
     position: absolute;
     z-index: -1;
-    left: 4px;
+    /* left: 4px;   */
     top: 6px;
     /* transform: rotate(90deg); */
     z-index: 1;
@@ -569,7 +611,7 @@
 #first_purpleimage{
     position: absolute;
     z-index: -1;
-    left: 14px;
+    /* left: 14px; */
     top: 0px;
     
     /* transform: rotate(180deg); */
@@ -582,7 +624,7 @@
 #first_redimage{
     position: absolute;
     z-index: -1;
-    left: -10px;
+    left: -18px;
     top: -20px;
     /* transform: rotate(180deg); */
     z-index: 1;

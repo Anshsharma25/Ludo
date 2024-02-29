@@ -11,11 +11,13 @@ const colors = { second_box: "yellow", box: "aqua", third_col: "purple", third_c
 console.log("You have an access to select the gotties", 'yellow turn');
 let currentTurn = 0;
 document.getElementById(boxArray[currentTurn]).style.backgroundColor = "gray";
-const object = { p1: 'Token_moving15', p2: '', p3: '', p4: '' };
+
+// This is for finding the current position of the images 
+
+const objectp = { p1: 'Token_moving15', p2: '', p3: '', p4: '' };
 const objecty = { y1: 'Token_moving41', y2: '', y3: '', y4: '' };
 const objectr = { r1: 'Token_moving28', r2: '', r3: '', r4: '' };
 const objectb = { b1: 'Token_moving2', b2: '', b3: '', b4: '' };
-
 
 document.getElementById('my-button').addEventListener('click', () => {
     randomElement = myArray[Math.floor(Math.random() * myArray.length)];
@@ -34,121 +36,177 @@ document.getElementById('my-button').addEventListener('click', () => {
     document.getElementById(boxArray[currentTurn]).style.backgroundColor = "gray";
 });
 
+// --------------------------------------------------------------this is for blue token ------------------------------------------------------------------------------
 
 
-document.getElementById('first_blueimage').addEventListener('click',
-    function move_gitti() {
-        var number = +objectb.b1.match(/\d+/)[0];
-        var newNum = number + 5;
-        var newStr = objectb.b1.replace(/\d+/, newNum);
+let blueOneRound = 0;
+document.getElementById('first_blueimage').addEventListener('click', blue_gitti)
+function blue_gitti(e) {
+    console.log(e);
+    let arr = ['blue1', 'blue2', 'blue3', 'blue4', 'blue5']
+    let number = +objectb.b1.match(/\d+/)[0];
+    console.log(number);
 
-        console.log(newStr);
-        console.log(document.getElementById("first_blueimage"))
+    if (number > 44 && number < 52) {
+        blueOneRound = 2;
+    }
 
+    if (blueOneRound == 0) {
+        newNum = 2; blueOneRound = 1;
+    } else {
+        newNum = number + 5;
+    }
 
+    if ((blueOneRound == 2) && (newNum > 52)) {
+        newNum = `blue_${newNum-52}`
 
-        var elements = document.getElementsByClassName(newStr);
-        if (elements.length > 0) {
-            var firstElement = elements[0];
-            firstElement.appendChild(document.getElementById("first_blueimages"));
-            console.log(firstElement.className);
-            objectb.b1 = firstElement.className;
-        } else {
-            console.log("No element found with class name", newStr);
-        }
-
-
-        // when it moves another home thats why we create the arr of middle once
-        // let arr = ['Token_moving13', 'Token_moving26', 'Token_moving51'];
-        // if (arr.includes(newStr)) {
-        //     document.getElementsByClassName('Token_moving1')[0].appendChild(document.getElementById('fourthyellowimg'));
+    }
+    if (arr.length > 0) {
+        // if (arr1.length - 1 !== null) {
+            document.getElementsByClassName('ludohome')[0].appendChild(document.getElementById('second_redimage'));
         // }
-    })
+    } else {
+        document.getElementById('second_redimage').appendChild(document.getElementsByClassName('ludohome')[0]);
+    }
+    console.log(blueOneRound, newNum);
+    let newStr = objectb.b1.replace(/\d+/, newNum);
+    console.log(document.getElementsByClassName('blue4')[0]);
+
+    console.log(newStr);
+    console.log('=============', document.getElementsByClassName(newStr)[0]);
+    document.getElementsByClassName(newStr)[0].appendChild(document.getElementById('first_blueimage'));
+    const className = (document.getElementsByClassName(newStr)[0].className).split(' ')[1]
+    console.log(className)
+    objectb.b1 = className
+}
 
 
-//  this is  gotti is for purple color
+//  ---------------------------------------------------------------this is  gotti is for purple color---------------------------------------------------------------------------------
 
-document.getElementById('first_purpleimage').addEventListener('click',
-    function move_gitti() {
-        console.log("----ekfmkdmss")
-        var number = +object.p1.match(/\d+/)[0];
-        var newNumber = number + 5;
-        var newString = +object.p1.replace(/\d+/, newNumber);
+let purpleOneRound = 0;
+document.getElementById('first_purpleimage').addEventListener('click', purple_gitti)
+function purple_gitti(e) {
+    console.log(e);
+    let arr1 = ['purple1', 'purple2', 'purple3', 'purple4', 'purple5']
+    let number = +objectp.p1.match(/\d+/)[0];
+    // console.log(number);
 
-        console.log(newString);
-        // debugger
-        console.log(document.getElementById("first_purpleimage"))
-        document.getElementsByClassName(newString)[0].appendChild(document.getElementById("first_purpleimage"));
-        const className = document.getElementsByClassName(newString)[0].className
-        console.log(className)
-        object.p1 = className
-        console.log(object.p1, "p11")
-        data = true
+    if (number > 5 && number < 13) {
+        purpleOneRound = 2;
+    }
 
-        // document.getElementById('move').append(document.getElementById("image3"));
-    })
+    if (purpleOneRound == 0) {
+        newNum = 15; purpleOneRound = 1;
+    } else {
+        newNum = number + 5;
+    }
 
-//  this is  gotti is for red color-------------------------
+    if ((purpleOneRound == 2) && (newNum > 13)) {
+        newNum = `purple_${newNum - 13}`
 
-document.getElementById('second_redimage').addEventListener('click',
-    function move_gitti() {
-        console.log("----ekfmkdmss")
-        // document.getElementById('redimage').append(document.getElementById("first_redimage"));
-        // document.getElementById('move').append(document.getElementById("image3"));
-        var number = +objectr.r1.match(/\d+/)[0];
-        var newNum = number + 5;
-        var newStr = objectr.r1.replace(/\d+/, newNum);
-        console.log(newStr);
-        console.log(document.getElementById("second_redimage"))
-        document.getElementsByClassName(newStr)[0].appendChild(document.getElementById("second_redimage"));
-        const className = document.getElementsByClassName(newStr)[0].className
-        console.log(className)
-        object.p1 = className
-        console.log(objectr.r1, "r11")
-    })
-//  this is  gotti is for yellow color
+    }
+    if (arr1.length > 0) {
+        // if (arr1.length - 1 !== null) {
+            document.getElementsByClassName('ludohome')[0].appendChild(document.getElementById('second_redimage'));
+        // }
+    } else {
+        document.getElementById('second_redimage').appendChild(document.getElementsByClassName('ludohome')[0]);
+    }
+
+    console.log({round: purpleOneRound, currentPosition: number, newPosition: newNum});
+
+    if (newNum > 52  && purpleOneRound == 1) {
+        newNum = newNum - 52;
+    }
+    let newStr = objectp.p1.replace(/\d+/, newNum);
+  
+    document.getElementsByClassName(newStr)[0].appendChild(document.getElementById('first_purpleimage'));
+    const className = (document.getElementsByClassName(newStr)[0].className).split(' ')[1]
+    
+    objectp.p1 = className
+}
+//  ---------------------------------------------------------------this is  gotti is for red color----------------------------------------------------------------------
+
+let redOneRound = 0;
+document.getElementById('second_redimage').addEventListener('click', red_gitti)
+function red_gitti(e) { 
+    let arr1 = ['red1', 'red2', 'red3', 'red4', 'red5']
+    let number = +objectr.r1.match(/\d+/)[0];
+    console.log(objectr.r1);
+    
+
+    if (number > 18 && number < 27) {
+        redOneRound = 2;
+    }
+
+    if (redOneRound == 0) {
+        newNum = 28; redOneRound = 1;
+    } else {
+        newNum = number + 5;
+    }
+
+    if ((redOneRound == 2) && (newNum > 26)) {
+        newNum = `red_${newNum - 26}`
+
+    }
+    // if (arr1.length > 0) {
+    //     if (arr1.length - 1 !== null) {
+    //         document.getElementsByClassName('ludohome')[0].appendChild(document.getElementById('second_redimage'));
+    //     }
+    // } else {
+    //     document.getElementById('second_redimage').appendChild(document.getElementsByClassName('ludohome')[0]);
+    // }
+
+    
+
+    if (newNum > 52) {
+        newNum = newNum - 52;
+    }
+    console.log({round: redOneRound, currentPosition: number, newPosition: newNum});
+
+    let newStr = objectr.r1.replace(/\d+/, newNum);
+    document.getElementsByClassName(newStr)[0].appendChild(document.getElementById('second_redimage'));
+    objectr.r1 = newStr
+}
+
+
+//  ----------------------------------------------------------------this is  gotti is for yellow color --------------------------------------------------------------------------------------------------------------------------------------
 let yellowOneRound = 0;
+document.getElementById('fourthyellowimg').addEventListener('click', move_gitti)
+function move_gitti(e) {
+    let arr = ['yellow1', 'yellow2', 'yellow3', 'yellow4', 'yellow5']
+    let number = +objecty.y1.match(/\d+/)[0];
 
-document.getElementById('fourthyellowimg').addEventListener('click',
-    function move_gitti() {
-        // let round1 = document.getElementsByClassName("Token_moving39")
-        // let round2 = document.getElementsByClassName("Token_moving34")
-        let arr = ['yellow1', 'yellow2', 'yellow3', 'yellow4', 'yellow5']
-        let newy = arr;
-        // if (round1 || round2) {
-        //     console.log('9999999999999999999s')
-        //     document.getElementsByClassName(newy[0])[0].appendChild(document.getElementById("fourthyellowimg"));
-        // }
+    if (number > 31 && number < 40) {
+        yellowOneRound = 2;
+    }
 
-        var number = +objecty.y1.match(/\d+/)[0];
-        
-        if (number > 31 && number < 40) {
-            yellowOneRound = 2;
+    if (yellowOneRound == 0) {
+        newNum = 41; yellowOneRound = 1;
+    } else {
+        newNum = number + 5;
+    }
+
+    if ((yellowOneRound == 2) && (newNum > 39)) {
+        newNum = `yellow_${newNum - 39}`
+
+    }
+    if (arr.length > 0) {
+        if (arr.length - 1 !== null) {
+            document.getElementsByClassName('ludohome')[0].appendChild(document.getElementById('fourthyellowimg'));
         }
-        
-        if (yellowOneRound == 0) {
-            newNum = 41; yellowOneRound = 1;
-        }else {
-            newNum = number + 5;
-        }
+    } else {
+        document.getElementById('fourthyellowimg').appendChild(document.getElementsByClassName('ludohome')[0]);
+    }
 
-        if ((yellowOneRound == 2) && (newNum > 38)) {
-            newNum = `yellow_${newNum - 38}`
-        }
-        console.log(yellowOneRound, newNum);
-        if (newNum > 52) {
-            newNum = newNum - 52;
-        }
-        var newStr = objecty.y1.replace(/\d+/, newNum);
-        console.log(document.getElementsByClassName('Token_movingyellow_4')[0]);
-        console.log('________________', newStr);
-        console.log('=============', document.getElementsByClassName(newStr)[0]);
-        document.getElementsByClassName(newStr)[0].appendChild(document.getElementById("fourthyellowimg"));
-        const className = document.getElementsByClassName(newStr)[0].className
-        console.log(className)
-        objecty.y1 = className
-        console.log(objecty.y1, "y11")
+    console.log(yellowOneRound, newNum);
 
-        // when it moves another home thats why we create the arr of middle once
-
-    })
+    // if (newNum > 52) {
+    //     newNum = newNum - 52;
+    // }
+    console.log({round: yellowOneRound, currentPosition: number, newPosition: newNum});
+    var newStr = objecty.y1.replace(/\d+/, newNum);
+    document.getElementsByClassName(newStr)[0].appendChild(document.getElementById('fourthyellowimg'));
+    const className = (document.getElementsByClassName(newStr)[0].className).split(' ')[1]
+ 
+}
