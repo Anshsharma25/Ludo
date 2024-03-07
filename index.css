@@ -552,17 +552,17 @@
 }
 
 .my-button {
-    height: 20px;
-    width: 30px;
+    height: 10px;
+    width: 25px;
     background-color: blueviolet;
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
     border: 1px solid black;
 
 }
 
-/* .my-button:hover{
+.my-button:hover{
     background-color: aqua;
-} */
+}
 #move{
     position: relative;
     z-index: 10001;
